@@ -1,0 +1,572 @@
+{
+  "timestamp": "2025-05-07T15:05:02.529667",
+  "events": [
+    {
+      "timestamp": "2025-05-07T15:05:04.654202",
+      "type": "event",
+      "data": {
+        "type": "logs",
+        "content": "starting_research",
+        "output": "\ud83d\udd0d Starting the research task for 'ipl'...",
+        "metadata": null
+      }
+    },
+    {
+      "timestamp": "2025-05-07T15:05:04.659000",
+      "type": "event",
+      "data": {
+        "type": "logs",
+        "content": "agent_generated",
+        "output": "\ud83c\udfcf Sports Analyst Agent",
+        "metadata": null
+      }
+    },
+    {
+      "timestamp": "2025-05-07T15:05:04.662449",
+      "type": "event",
+      "data": {
+        "type": "logs",
+        "content": "planning_research",
+        "output": "\ud83c\udf10 Browsing the web to learn more about the task: ipl...",
+        "metadata": null
+      }
+    },
+    {
+      "timestamp": "2025-05-07T15:05:06.948694",
+      "type": "event",
+      "data": {
+        "type": "logs",
+        "content": "planning_research",
+        "output": "\ud83e\udd14 Planning the research strategy and subtasks...",
+        "metadata": null
+      }
+    },
+    {
+      "timestamp": "2025-05-07T15:05:08.499376",
+      "type": "event",
+      "data": {
+        "type": "logs",
+        "content": "subqueries",
+        "output": "\ud83d\uddc2\ufe0f I will conduct my research based on the following queries: ['IPL 2025 match reports and highlights', 'Mumbai Indians performance IPL 2025', 'Gujarat Titans vs Mumbai Indians IPL 2025 result', 'ipl']...",
+        "metadata": [
+          "IPL 2025 match reports and highlights",
+          "Mumbai Indians performance IPL 2025",
+          "Gujarat Titans vs Mumbai Indians IPL 2025 result",
+          "ipl"
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-05-07T15:05:08.509934",
+      "type": "event",
+      "data": {
+        "type": "logs",
+        "content": "running_subquery_research",
+        "output": "\n\ud83d\udd0d Running research for 'IPL 2025 match reports and highlights'...",
+        "metadata": null
+      }
+    },
+    {
+      "timestamp": "2025-05-07T15:05:08.514812",
+      "type": "event",
+      "data": {
+        "type": "logs",
+        "content": "running_subquery_research",
+        "output": "\n\ud83d\udd0d Running research for 'Mumbai Indians performance IPL 2025'...",
+        "metadata": null
+      }
+    },
+    {
+      "timestamp": "2025-05-07T15:05:08.519740",
+      "type": "event",
+      "data": {
+        "type": "logs",
+        "content": "running_subquery_research",
+        "output": "\n\ud83d\udd0d Running research for 'Gujarat Titans vs Mumbai Indians IPL 2025 result'...",
+        "metadata": null
+      }
+    },
+    {
+      "timestamp": "2025-05-07T15:05:08.524683",
+      "type": "event",
+      "data": {
+        "type": "logs",
+        "content": "running_subquery_research",
+        "output": "\n\ud83d\udd0d Running research for 'ipl'...",
+        "metadata": null
+      }
+    },
+    {
+      "timestamp": "2025-05-07T15:05:10.522446",
+      "type": "event",
+      "data": {
+        "type": "logs",
+        "content": "added_source_url",
+        "output": "\u2705 Added source url to research: https://sportsdanka.com/cricket/ipl-2025-match-1-to-23-summary-highlights/\n",
+        "metadata": "https://sportsdanka.com/cricket/ipl-2025-match-1-to-23-summary-highlights/"
+      }
+    },
+    {
+      "timestamp": "2025-05-07T15:05:10.532449",
+      "type": "event",
+      "data": {
+        "type": "logs",
+        "content": "added_source_url",
+        "output": "\u2705 Added source url to research: https://www.iplt20.com/news/match-reports\n",
+        "metadata": "https://www.iplt20.com/news/match-reports"
+      }
+    },
+    {
+      "timestamp": "2025-05-07T15:05:10.541878",
+      "type": "event",
+      "data": {
+        "type": "logs",
+        "content": "added_source_url",
+        "output": "\u2705 Added source url to research: https://www.iplt20.com/videos?mid=b9ad3f1be588491ea99c7e592965fe7c\n",
+        "metadata": "https://www.iplt20.com/videos?mid=b9ad3f1be588491ea99c7e592965fe7c"
+      }
+    },
+    {
+      "timestamp": "2025-05-07T15:05:10.550730",
+      "type": "event",
+      "data": {
+        "type": "logs",
+        "content": "added_source_url",
+        "output": "\u2705 Added source url to research: https://www.espncricinfo.com/series/ipl-2025-1449924/videos\n",
+        "metadata": "https://www.espncricinfo.com/series/ipl-2025-1449924/videos"
+      }
+    },
+    {
+      "timestamp": "2025-05-07T15:05:10.561117",
+      "type": "event",
+      "data": {
+        "type": "logs",
+        "content": "added_source_url",
+        "output": "\u2705 Added source url to research: https://www.iplt20.com/videos/highlights\n",
+        "metadata": "https://www.iplt20.com/videos/highlights"
+      }
+    },
+    {
+      "timestamp": "2025-05-07T15:05:10.570987",
+      "type": "event",
+      "data": {
+        "type": "logs",
+        "content": "researching",
+        "output": "\ud83e\udd14 Researching for relevant information across multiple sources...\n",
+        "metadata": null
+      }
+    },
+    {
+      "timestamp": "2025-05-07T15:05:10.579749",
+      "type": "event",
+      "data": {
+        "type": "logs",
+        "content": "scraping_urls",
+        "output": "\ud83c\udf10 Scraping content from 5 URLs...",
+        "metadata": null
+      }
+    },
+    {
+      "timestamp": "2025-05-07T15:05:10.599712",
+      "type": "event",
+      "data": {
+        "type": "logs",
+        "content": "added_source_url",
+        "output": "\u2705 Added source url to research: https://www.republicworld.com/cricket/updated-ipl-2025-points-table-after-gujarat-titans-defeat-mumbai-indians-in-last-ball-thriller\n",
+        "metadata": "https://www.republicworld.com/cricket/updated-ipl-2025-points-table-after-gujarat-titans-defeat-mumbai-indians-in-last-ball-thriller"
+      }
+    },
+    {
+      "timestamp": "2025-05-07T15:05:10.607758",
+      "type": "event",
+      "data": {
+        "type": "logs",
+        "content": "added_source_url",
+        "output": "\u2705 Added source url to research: https://sports.ndtv.com/ipl-2025/ipl-2025-points-table-gujarat-titans-topple-royal-challengers-bengaluru-to-claim-top-spot-mumbai-indians-slip-down-to-8349819\n",
+        "metadata": "https://sports.ndtv.com/ipl-2025/ipl-2025-points-table-gujarat-titans-topple-royal-challengers-bengaluru-to-claim-top-spot-mumbai-indians-slip-down-to-8349819"
+      }
+    },
+    {
+      "timestamp": "2025-05-07T15:05:10.613645",
+      "type": "event",
+      "data": {
+        "type": "logs",
+        "content": "added_source_url",
+        "output": "\u2705 Added source url to research: https://timesofindia.indiatimes.com/sports/cricket/ipl/top-stories/ipl-2025-mumbai-indians-achieve-historic-first-in-13-years-against-rajasthan-royals/articleshow/120808548.cms\n",
+        "metadata": "https://timesofindia.indiatimes.com/sports/cricket/ipl/top-stories/ipl-2025-mumbai-indians-achieve-historic-first-in-13-years-against-rajasthan-royals/articleshow/120808548.cms"
+      }
+    },
+    {
+      "timestamp": "2025-05-07T15:05:10.619406",
+      "type": "event",
+      "data": {
+        "type": "logs",
+        "content": "added_source_url",
+        "output": "\u2705 Added source url to research: https://www.firstpost.com/firstcricket/mi-vs-gt-ipl-2025-live-score-high-flying-mumbai-indians-eye-revenge-against-gujarat-titans-at-wankhede-liveblog-13885955.html\n",
+        "metadata": "https://www.firstpost.com/firstcricket/mi-vs-gt-ipl-2025-live-score-high-flying-mumbai-indians-eye-revenge-against-gujarat-titans-at-wankhede-liveblog-13885955.html"
+      }
+    },
+    {
+      "timestamp": "2025-05-07T15:05:10.625440",
+      "type": "event",
+      "data": {
+        "type": "logs",
+        "content": "added_source_url",
+        "output": "\u2705 Added source url to research: https://sportstar.thehindu.com/cricket/ipl/ipl-news/mi-vs-gt-live-score-mumbai-indians-gujarat-titans-ipl-2025-match-streaming-info-highlights/article69544750.ece\n",
+        "metadata": "https://sportstar.thehindu.com/cricket/ipl/ipl-news/mi-vs-gt-live-score-mumbai-indians-gujarat-titans-ipl-2025-match-streaming-info-highlights/article69544750.ece"
+      }
+    },
+    {
+      "timestamp": "2025-05-07T15:05:10.631349",
+      "type": "event",
+      "data": {
+        "type": "logs",
+        "content": "researching",
+        "output": "\ud83e\udd14 Researching for relevant information across multiple sources...\n",
+        "metadata": null
+      }
+    },
+    {
+      "timestamp": "2025-05-07T15:05:10.636455",
+      "type": "event",
+      "data": {
+        "type": "logs",
+        "content": "scraping_urls",
+        "output": "\ud83c\udf10 Scraping content from 5 URLs...",
+        "metadata": null
+      }
+    },
+    {
+      "timestamp": "2025-05-07T15:05:10.875456",
+      "type": "event",
+      "data": {
+        "type": "logs",
+        "content": "added_source_url",
+        "output": "\u2705 Added source url to research: https://www.iplt20.com/\n",
+        "metadata": "https://www.iplt20.com/"
+      }
+    },
+    {
+      "timestamp": "2025-05-07T15:05:10.885199",
+      "type": "event",
+      "data": {
+        "type": "logs",
+        "content": "added_source_url",
+        "output": "\u2705 Added source url to research: https://indianexpress.com/article/sports/ipl/ipl-2025-playoff-qualification-mumbai-indians-point-cutoff-schedule-9985204/\n",
+        "metadata": "https://indianexpress.com/article/sports/ipl/ipl-2025-playoff-qualification-mumbai-indians-point-cutoff-schedule-9985204/"
+      }
+    },
+    {
+      "timestamp": "2025-05-07T15:05:10.895176",
+      "type": "event",
+      "data": {
+        "type": "logs",
+        "content": "added_source_url",
+        "output": "\u2705 Added source url to research: https://m.cricbuzz.com/\n",
+        "metadata": "https://m.cricbuzz.com/"
+      }
+    },
+    {
+      "timestamp": "2025-05-07T15:05:10.901719",
+      "type": "event",
+      "data": {
+        "type": "logs",
+        "content": "added_source_url",
+        "output": "\u2705 Added source url to research: https://www.news18.com/cricket/ipl-2025-mi-vs-gt-live-score-mumbai-indians-vs-gujarat-titans-today-ipl-match-toss-update-latest-scorecard-liveblog-9325899.html\n",
+        "metadata": "https://www.news18.com/cricket/ipl-2025-mi-vs-gt-live-score-mumbai-indians-vs-gujarat-titans-today-ipl-match-toss-update-latest-scorecard-liveblog-9325899.html"
+      }
+    },
+    {
+      "timestamp": "2025-05-07T15:05:10.908008",
+      "type": "event",
+      "data": {
+        "type": "logs",
+        "content": "researching",
+        "output": "\ud83e\udd14 Researching for relevant information across multiple sources...\n",
+        "metadata": null
+      }
+    },
+    {
+      "timestamp": "2025-05-07T15:05:10.913390",
+      "type": "event",
+      "data": {
+        "type": "logs",
+        "content": "scraping_urls",
+        "output": "\ud83c\udf10 Scraping content from 4 URLs...",
+        "metadata": null
+      }
+    },
+    {
+      "timestamp": "2025-05-07T15:05:11.000846",
+      "type": "event",
+      "data": {
+        "type": "logs",
+        "content": "added_source_url",
+        "output": "\u2705 Added source url to research: https://sports.ndtv.com/ipl-2025/mumbai-indians-vs-gujarat-titans-live-score-mi-vs-gt-live-updates-ipl-2025-rohit-sharma-shubman-gill-hardik-pandya-8343772\n",
+        "metadata": "https://sports.ndtv.com/ipl-2025/mumbai-indians-vs-gujarat-titans-live-score-mi-vs-gt-live-updates-ipl-2025-rohit-sharma-shubman-gill-hardik-pandya-8343772"
+      }
+    },
+    {
+      "timestamp": "2025-05-07T15:05:11.012316",
+      "type": "event",
+      "data": {
+        "type": "logs",
+        "content": "added_source_url",
+        "output": "\u2705 Added source url to research: https://www.espncricinfo.com/series/ipl-2025-1449924/mumbai-indians-vs-gujarat-titans-56th-match-1473493/match-report\n",
+        "metadata": "https://www.espncricinfo.com/series/ipl-2025-1449924/mumbai-indians-vs-gujarat-titans-56th-match-1473493/match-report"
+      }
+    },
+    {
+      "timestamp": "2025-05-07T15:05:11.031342",
+      "type": "event",
+      "data": {
+        "type": "logs",
+        "content": "added_source_url",
+        "output": "\u2705 Added source url to research: https://www.bbc.co.uk/sport/cricket/articles/c98g8y1nl96o\n",
+        "metadata": "https://www.bbc.co.uk/sport/cricket/articles/c98g8y1nl96o"
+      }
+    },
+    {
+      "timestamp": "2025-05-07T15:05:11.039725",
+      "type": "event",
+      "data": {
+        "type": "logs",
+        "content": "researching",
+        "output": "\ud83e\udd14 Researching for relevant information across multiple sources...\n",
+        "metadata": null
+      }
+    },
+    {
+      "timestamp": "2025-05-07T15:05:11.057811",
+      "type": "event",
+      "data": {
+        "type": "logs",
+        "content": "scraping_urls",
+        "output": "\ud83c\udf10 Scraping content from 3 URLs...",
+        "metadata": null
+      }
+    },
+    {
+      "timestamp": "2025-05-07T15:05:11.324327",
+      "type": "event",
+      "data": {
+        "type": "logs",
+        "content": "scraping_content",
+        "output": "\ud83d\udcc4 Scraped 5 pages of content",
+        "metadata": null
+      }
+    },
+    {
+      "timestamp": "2025-05-07T15:05:11.331540",
+      "type": "event",
+      "data": {
+        "type": "logs",
+        "content": "scraping_images",
+        "output": "\ud83d\uddbc\ufe0f Selected 4 new images from 34 total images",
+        "metadata": [
+          "https://img.republicworld.com/all_images/jasprit-bumrah-celebrates-a-wicket-1746559252544-16_9.webp?w=1280&h=720&q=75&format=webp",
+          "https://sb.scorecardresearch.com/p?c1=2&c2=11398210&cs_ucfr=1&cv=4.4.0&cj=1",
+          "https://assetsss.thehindu.com/theme/images/ss-online/1x1_spacer.png",
+          "https://ss-i.thgim.com/public/incoming/z78xhw/article69546611.ece/alternates/LANDSCAPE_1200/India_IPL_Cricket_64021.jpg"
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-05-07T15:05:11.338379",
+      "type": "event",
+      "data": {
+        "type": "logs",
+        "content": "scraping_complete",
+        "output": "\ud83c\udf10 Scraping complete",
+        "metadata": null
+      }
+    },
+    {
+      "timestamp": "2025-05-07T15:05:11.343967",
+      "type": "event",
+      "data": {
+        "type": "logs",
+        "content": "fetching_query_content",
+        "output": "\ud83d\udcda Getting relevant content based on query: Mumbai Indians performance IPL 2025...",
+        "metadata": null
+      }
+    },
+    {
+      "timestamp": "2025-05-07T15:05:11.563199",
+      "type": "event",
+      "data": {
+        "type": "logs",
+        "content": "scraping_content",
+        "output": "\ud83d\udcc4 Scraped 4 pages of content",
+        "metadata": null
+      }
+    },
+    {
+      "timestamp": "2025-05-07T15:05:11.574924",
+      "type": "event",
+      "data": {
+        "type": "logs",
+        "content": "scraping_images",
+        "output": "\ud83d\uddbc\ufe0f Selected 4 new images from 27 total images",
+        "metadata": [
+          "https://brightcove.iplt20.com/output/input/6372447453112-1746588177.jpg",
+          "https://documents.iplt20.com//ipl/assets/images/loader.gif",
+          "https://documents.iplt20.com//ipl/assets/images/ap-close-pop-vd.png",
+          "https://documents.iplt20.com//ipl/assets/images/new-eye.svg"
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-05-07T15:05:11.589218",
+      "type": "event",
+      "data": {
+        "type": "logs",
+        "content": "scraping_complete",
+        "output": "\ud83c\udf10 Scraping complete",
+        "metadata": null
+      }
+    },
+    {
+      "timestamp": "2025-05-07T15:05:11.597400",
+      "type": "event",
+      "data": {
+        "type": "logs",
+        "content": "fetching_query_content",
+        "output": "\ud83d\udcda Getting relevant content based on query: ipl...",
+        "metadata": null
+      }
+    },
+    {
+      "timestamp": "2025-05-07T15:05:11.705937",
+      "type": "event",
+      "data": {
+        "type": "logs",
+        "content": "scraping_content",
+        "output": "\ud83d\udcc4 Scraped 3 pages of content",
+        "metadata": null
+      }
+    },
+    {
+      "timestamp": "2025-05-07T15:05:11.716201",
+      "type": "event",
+      "data": {
+        "type": "logs",
+        "content": "scraping_images",
+        "output": "\ud83d\uddbc\ufe0f Selected 4 new images from 11 total images",
+        "metadata": [
+          "https://sb.scorecardresearch.com/p?c1=2&c2=9548033&cv=3.6.0&cj=1",
+          "https://c.ndtvimg.com/2025-05/3kjf1s7_gerald-coetzee-afp_625x300_07_May_25.jpg?im=FeatureCrop,algorithm=dnn,width=806,height=605",
+          "https://sdata.ndtv.com/sportz/Sportz/cricket/flags/1111.png?cache=1",
+          "https://sdata.ndtv.com/sportz/Sportz/cricket/flags/2955.png?cache=1"
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-05-07T15:05:11.725305",
+      "type": "event",
+      "data": {
+        "type": "logs",
+        "content": "scraping_complete",
+        "output": "\ud83c\udf10 Scraping complete",
+        "metadata": null
+      }
+    },
+    {
+      "timestamp": "2025-05-07T15:05:11.731903",
+      "type": "event",
+      "data": {
+        "type": "logs",
+        "content": "fetching_query_content",
+        "output": "\ud83d\udcda Getting relevant content based on query: Gujarat Titans vs Mumbai Indians IPL 2025 result...",
+        "metadata": null
+      }
+    },
+    {
+      "timestamp": "2025-05-07T15:05:12.089038",
+      "type": "event",
+      "data": {
+        "type": "logs",
+        "content": "scraping_content",
+        "output": "\ud83d\udcc4 Scraped 5 pages of content",
+        "metadata": null
+      }
+    },
+    {
+      "timestamp": "2025-05-07T15:05:12.100735",
+      "type": "event",
+      "data": {
+        "type": "logs",
+        "content": "scraping_images",
+        "output": "\ud83d\uddbc\ufe0f Selected 4 new images from 39 total images",
+        "metadata": [
+          "https://sportsdanka.com/wp-content/plugins/phastpress/phast.php/c2VydmljZT1pbWFnZXMmc3JjPWh0dHBzJTNBJTJGJTJGc3BvcnRzZGFua2EuY29tJTJGd3AtY29udGVudCUyRnVwbG9hZHMlMkYyMDI1JTJGMDMlMkZSQ0ItdnMtS0tSLU5ldy0xMDI0eDU3Ni5qcGcmY2FjaGVNYXJrZXI9MTc0MjMxMjc3Mi04MzY5MyZ0b2tlbj1mNWEyMWMzYTJiY2ZjNmIz.q.jpg",
+          "https://sportsdanka.com/wp-content/plugins/phastpress/phast.php/c2VydmljZT1pbWFnZXMmc3JjPWh0dHBzJTNBJTJGJTJGc3BvcnRzZGFua2/EuY29tJTJGd3AtY29udGVudCUyRnVwbG9hZHMlMkYyMDI1JTJGMDQlMkZJUEwtMjAyNS1NYXRjaC0xLXRvLTIzLVN1bW1hcnktSGlnaGxpZ2h0cy1SZWNhcC1Lbm93LVdoaWNoLVRlYW1zLUNvdWxkLVF1YWxpZnktMTAyNHg2NjUucG5nJmNhY2hlTWFya2VyPTE3NDQyMjcxMjUtNzUwODIzJnRva2VuPTgwNjE0MDY2ZmJhMWI4ZjQ.q.png",
+          "https://sportsdanka.com/wp-content/plugins/phastpress/phast.php/c2VydmljZT1pbWFnZXMmc3JjPWh0dHBzJTNBJTJGJTJGc3BvcnRzZGFua2EuY29tJTJGd3AtY29udGVudCUyRnVwbG9hZHMlMkYyMDI1JTJGMDMlMkZSUi12cy1TUkgtaDJoLW1pbi0xMDI0eDc2OC5wbmcmY2FjaGVNYXJrZXI9MTc0MjQwMTIxMy0xMzEzMTUxJnRva2VuPTBkZDNhNzIwZTE5NWI2Njc.q.png",
+          "https://documents.iplt20.com//ipl/assets/images/new-eye-banner.svg"
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-05-07T15:05:12.109272",
+      "type": "event",
+      "data": {
+        "type": "logs",
+        "content": "scraping_complete",
+        "output": "\ud83c\udf10 Scraping complete",
+        "metadata": null
+      }
+    },
+    {
+      "timestamp": "2025-05-07T15:05:12.116270",
+      "type": "event",
+      "data": {
+        "type": "logs",
+        "content": "fetching_query_content",
+        "output": "\ud83d\udcda Getting relevant content based on query: IPL 2025 match reports and highlights...",
+        "metadata": null
+      }
+    },
+    {
+      "timestamp": "2025-05-07T15:05:13.124336",
+      "type": "event",
+      "data": {
+        "type": "logs",
+        "content": "research_step_finalized",
+        "output": "Finalized research step.\n\ud83d\udcb8 Total Research Costs: $0.014889040000000001",
+        "metadata": null
+      }
+    },
+    {
+      "timestamp": "2025-05-07T15:05:13.147001",
+      "type": "event",
+      "data": {
+        "type": "logs",
+        "content": "writing_report",
+        "output": "\u270d\ufe0f Writing report for 'ipl'...",
+        "metadata": null
+      }
+    }
+  ],
+  "content": {
+    "query": "",
+    "sources": [],
+    "context": [],
+    "report": "",
+    "costs": 0.0,
+    "type": "report",
+    "content": "selected_images",
+    "output": "### Broadcasting and Sponsorship\n\n",
+    "metadata": [
+      "https://img.republicworld.com/all_images/jasprit-bumrah-celebrates-a-wicket-1746559252544-16_9.webp?w=1280&h=720&q=75&format=webp",
+      "https://sb.scorecardresearch.com/p?c1=2&c2=11398210&cs_ucfr=1&cv=4.4.0&cj=1",
+      "https://assetsss.thehindu.com/theme/images/ss-online/1x1_spacer.png",
+      "https://ss-i.thgim.com/public/incoming/z78xhw/article69546611.ece/alternates/LANDSCAPE_1200/India_IPL_Cricket_64021.jpg",
+      "https://brightcove.iplt20.com/output/input/6372447453112-1746588177.jpg",
+      "https://documents.iplt20.com//ipl/assets/images/loader.gif",
+      "https://documents.iplt20.com//ipl/assets/images/ap-close-pop-vd.png",
+      "https://documents.iplt20.com//ipl/assets/images/new-eye.svg",
+      "https://sb.scorecardresearch.com/p?c1=2&c2=9548033&cv=3.6.0&cj=1",
+      "https://c.ndtvimg.com/2025-05/3kjf1s7_gerald-coetzee-afp_625x300_07_May_25.jpg?im=FeatureCrop,algorithm=dnn,width=806,height=605"
+    ]
+  }
+}

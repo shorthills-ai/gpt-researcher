@@ -1,0 +1,717 @@
+{
+  "timestamp": "2025-05-07T15:10:36.598037",
+  "events": [
+    {
+      "timestamp": "2025-05-07T15:10:38.564288",
+      "type": "event",
+      "data": {
+        "type": "logs",
+        "content": "starting_research",
+        "output": "\ud83d\udd0d Starting the research task for 'what is the ipl'...",
+        "metadata": null
+      }
+    },
+    {
+      "timestamp": "2025-05-07T15:10:38.567577",
+      "type": "event",
+      "data": {
+        "type": "logs",
+        "content": "agent_generated",
+        "output": "\ud83c\udfcf Sports Analyst Agent",
+        "metadata": null
+      }
+    },
+    {
+      "timestamp": "2025-05-07T15:10:38.579362",
+      "type": "event",
+      "data": {
+        "type": "logs",
+        "content": "planning_research",
+        "output": "\ud83c\udf10 Browsing the web to learn more about the task: what is the ipl...",
+        "metadata": null
+      }
+    },
+    {
+      "timestamp": "2025-05-07T15:10:40.909830",
+      "type": "event",
+      "data": {
+        "type": "logs",
+        "content": "planning_research",
+        "output": "\ud83e\udd14 Planning the research strategy and subtasks...",
+        "metadata": null
+      }
+    },
+    {
+      "timestamp": "2025-05-07T15:10:42.138604",
+      "type": "event",
+      "data": {
+        "type": "logs",
+        "content": "subqueries",
+        "output": "\ud83d\uddc2\ufe0f I will conduct my research based on the following queries: ['Indian Premier League 2025 overview', 'IPL cricket league latest news May 2025', 'Indian Premier League history and format', 'what is the ipl']...",
+        "metadata": [
+          "Indian Premier League 2025 overview",
+          "IPL cricket league latest news May 2025",
+          "Indian Premier League history and format",
+          "what is the ipl"
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-05-07T15:10:42.145068",
+      "type": "event",
+      "data": {
+        "type": "logs",
+        "content": "running_subquery_research",
+        "output": "\n\ud83d\udd0d Running research for 'Indian Premier League 2025 overview'...",
+        "metadata": null
+      }
+    },
+    {
+      "timestamp": "2025-05-07T15:10:42.151302",
+      "type": "event",
+      "data": {
+        "type": "logs",
+        "content": "fetching_query_content",
+        "output": "\ud83d\udcda Getting relevant content based on query: Indian Premier League 2025 overview...",
+        "metadata": null
+      }
+    },
+    {
+      "timestamp": "2025-05-07T15:10:42.160915",
+      "type": "event",
+      "data": {
+        "type": "logs",
+        "content": "running_subquery_research",
+        "output": "\n\ud83d\udd0d Running research for 'IPL cricket league latest news May 2025'...",
+        "metadata": null
+      }
+    },
+    {
+      "timestamp": "2025-05-07T15:10:42.166559",
+      "type": "event",
+      "data": {
+        "type": "logs",
+        "content": "fetching_query_content",
+        "output": "\ud83d\udcda Getting relevant content based on query: IPL cricket league latest news May 2025...",
+        "metadata": null
+      }
+    },
+    {
+      "timestamp": "2025-05-07T15:10:42.173236",
+      "type": "event",
+      "data": {
+        "type": "logs",
+        "content": "running_subquery_research",
+        "output": "\n\ud83d\udd0d Running research for 'Indian Premier League history and format'...",
+        "metadata": null
+      }
+    },
+    {
+      "timestamp": "2025-05-07T15:10:42.179270",
+      "type": "event",
+      "data": {
+        "type": "logs",
+        "content": "fetching_query_content",
+        "output": "\ud83d\udcda Getting relevant content based on query: Indian Premier League history and format...",
+        "metadata": null
+      }
+    },
+    {
+      "timestamp": "2025-05-07T15:10:42.188590",
+      "type": "event",
+      "data": {
+        "type": "logs",
+        "content": "running_subquery_research",
+        "output": "\n\ud83d\udd0d Running research for 'what is the ipl'...",
+        "metadata": null
+      }
+    },
+    {
+      "timestamp": "2025-05-07T15:10:42.193789",
+      "type": "event",
+      "data": {
+        "type": "logs",
+        "content": "fetching_query_content",
+        "output": "\ud83d\udcda Getting relevant content based on query: what is the ipl...",
+        "metadata": null
+      }
+    },
+    {
+      "timestamp": "2025-05-07T15:10:42.829027",
+      "type": "event",
+      "data": {
+        "type": "logs",
+        "content": "planning_research",
+        "output": "\ud83c\udf10 Browsing the web to learn more about the task: what is the ipl...",
+        "metadata": null
+      }
+    },
+    {
+      "timestamp": "2025-05-07T15:10:45.889401",
+      "type": "event",
+      "data": {
+        "type": "logs",
+        "content": "planning_research",
+        "output": "\ud83e\udd14 Planning the research strategy and subtasks...",
+        "metadata": null
+      }
+    },
+    {
+      "timestamp": "2025-05-07T15:10:47.442677",
+      "type": "event",
+      "data": {
+        "type": "logs",
+        "content": "subqueries",
+        "output": "\ud83d\uddc2\ufe0f I will conduct my research based on the following queries: ['Indian Premier League IPL 2025 overview', 'IPL cricket league history and format', 'IPL 2025 teams and player auction details', 'what is the ipl']...",
+        "metadata": [
+          "Indian Premier League IPL 2025 overview",
+          "IPL cricket league history and format",
+          "IPL 2025 teams and player auction details",
+          "what is the ipl"
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-05-07T15:10:47.452664",
+      "type": "event",
+      "data": {
+        "type": "logs",
+        "content": "running_subquery_research",
+        "output": "\n\ud83d\udd0d Running research for 'Indian Premier League IPL 2025 overview'...",
+        "metadata": null
+      }
+    },
+    {
+      "timestamp": "2025-05-07T15:10:47.459259",
+      "type": "event",
+      "data": {
+        "type": "logs",
+        "content": "running_subquery_research",
+        "output": "\n\ud83d\udd0d Running research for 'IPL cricket league history and format'...",
+        "metadata": null
+      }
+    },
+    {
+      "timestamp": "2025-05-07T15:10:47.466033",
+      "type": "event",
+      "data": {
+        "type": "logs",
+        "content": "running_subquery_research",
+        "output": "\n\ud83d\udd0d Running research for 'IPL 2025 teams and player auction details'...",
+        "metadata": null
+      }
+    },
+    {
+      "timestamp": "2025-05-07T15:10:47.471727",
+      "type": "event",
+      "data": {
+        "type": "logs",
+        "content": "running_subquery_research",
+        "output": "\n\ud83d\udd0d Running research for 'what is the ipl'...",
+        "metadata": null
+      }
+    },
+    {
+      "timestamp": "2025-05-07T15:10:49.695051",
+      "type": "event",
+      "data": {
+        "type": "logs",
+        "content": "added_source_url",
+        "output": "\u2705 Added source url to research: https://en.wikipedia.org/wiki/Indian_Premier_League\n",
+        "metadata": "https://en.wikipedia.org/wiki/Indian_Premier_League"
+      }
+    },
+    {
+      "timestamp": "2025-05-07T15:10:49.706425",
+      "type": "event",
+      "data": {
+        "type": "logs",
+        "content": "added_source_url",
+        "output": "\u2705 Added source url to research: https://www.webmd.com/beauty/intense-pulsed-light-treatment-overview\n",
+        "metadata": "https://www.webmd.com/beauty/intense-pulsed-light-treatment-overview"
+      }
+    },
+    {
+      "timestamp": "2025-05-07T15:10:49.719636",
+      "type": "event",
+      "data": {
+        "type": "logs",
+        "content": "added_source_url",
+        "output": "\u2705 Added source url to research: https://www.healthline.com/health/ipl-treatment\n",
+        "metadata": "https://www.healthline.com/health/ipl-treatment"
+      }
+    },
+    {
+      "timestamp": "2025-05-07T15:10:49.729486",
+      "type": "event",
+      "data": {
+        "type": "logs",
+        "content": "added_source_url",
+        "output": "\u2705 Added source url to research: https://www.realself.com/nonsurgical/ipl\n",
+        "metadata": "https://www.realself.com/nonsurgical/ipl"
+      }
+    },
+    {
+      "timestamp": "2025-05-07T15:10:49.746375",
+      "type": "event",
+      "data": {
+        "type": "logs",
+        "content": "added_source_url",
+        "output": "\u2705 Added source url to research: https://www.realself.com/news/things-to-know-about-ipl\n",
+        "metadata": "https://www.realself.com/news/things-to-know-about-ipl"
+      }
+    },
+    {
+      "timestamp": "2025-05-07T15:10:49.753274",
+      "type": "event",
+      "data": {
+        "type": "logs",
+        "content": "researching",
+        "output": "\ud83e\udd14 Researching for relevant information across multiple sources...\n",
+        "metadata": null
+      }
+    },
+    {
+      "timestamp": "2025-05-07T15:10:49.760507",
+      "type": "event",
+      "data": {
+        "type": "logs",
+        "content": "scraping_urls",
+        "output": "\ud83c\udf10 Scraping content from 5 URLs...",
+        "metadata": null
+      }
+    },
+    {
+      "timestamp": "2025-05-07T15:10:49.802269",
+      "type": "event",
+      "data": {
+        "type": "logs",
+        "content": "added_source_url",
+        "output": "\u2705 Added source url to research: https://www.jagranjosh.com/general-knowledge/ipl-2025-mega-auction-list-of-players-team-wise-with-base-and-sold-price-1732451915-1\n",
+        "metadata": "https://www.jagranjosh.com/general-knowledge/ipl-2025-mega-auction-list-of-players-team-wise-with-base-and-sold-price-1732451915-1"
+      }
+    },
+    {
+      "timestamp": "2025-05-07T15:10:49.813214",
+      "type": "event",
+      "data": {
+        "type": "logs",
+        "content": "added_source_url",
+        "output": "\u2705 Added source url to research: https://www.iplt20.com/auction\n",
+        "metadata": "https://www.iplt20.com/auction"
+      }
+    },
+    {
+      "timestamp": "2025-05-07T15:10:49.822489",
+      "type": "event",
+      "data": {
+        "type": "logs",
+        "content": "added_source_url",
+        "output": "\u2705 Added source url to research: https://india.cricketschedule.com/ipl-auction-players-list-prices-teams/\n",
+        "metadata": "https://india.cricketschedule.com/ipl-auction-players-list-prices-teams/"
+      }
+    },
+    {
+      "timestamp": "2025-05-07T15:10:49.833003",
+      "type": "event",
+      "data": {
+        "type": "logs",
+        "content": "added_source_url",
+        "output": "\u2705 Added source url to research: https://www.espncricinfo.com/auction/ipl-2025-auction-1460972\n",
+        "metadata": "https://www.espncricinfo.com/auction/ipl-2025-auction-1460972"
+      }
+    },
+    {
+      "timestamp": "2025-05-07T15:10:49.842171",
+      "type": "event",
+      "data": {
+        "type": "logs",
+        "content": "added_source_url",
+        "output": "\u2705 Added source url to research: https://www.crictracker.com/auction/ipl-auction/teams/\n",
+        "metadata": "https://www.crictracker.com/auction/ipl-auction/teams/"
+      }
+    },
+    {
+      "timestamp": "2025-05-07T15:10:49.850170",
+      "type": "event",
+      "data": {
+        "type": "logs",
+        "content": "researching",
+        "output": "\ud83e\udd14 Researching for relevant information across multiple sources...\n",
+        "metadata": null
+      }
+    },
+    {
+      "timestamp": "2025-05-07T15:10:49.856871",
+      "type": "event",
+      "data": {
+        "type": "logs",
+        "content": "scraping_urls",
+        "output": "\ud83c\udf10 Scraping content from 5 URLs...",
+        "metadata": null
+      }
+    },
+    {
+      "timestamp": "2025-05-07T15:10:49.889795",
+      "type": "event",
+      "data": {
+        "type": "logs",
+        "content": "added_source_url",
+        "output": "\u2705 Added source url to research: https://factodata.com/ipl-2025-overview-start-date-schedule-venues-and-more/\n",
+        "metadata": "https://factodata.com/ipl-2025-overview-start-date-schedule-venues-and-more/"
+      }
+    },
+    {
+      "timestamp": "2025-05-07T15:10:49.901077",
+      "type": "event",
+      "data": {
+        "type": "logs",
+        "content": "added_source_url",
+        "output": "\u2705 Added source url to research: https://www.fact-file.com/indian-premier-league-ipl-2025-overview/\n",
+        "metadata": "https://www.fact-file.com/indian-premier-league-ipl-2025-overview/"
+      }
+    },
+    {
+      "timestamp": "2025-05-07T15:10:49.910011",
+      "type": "event",
+      "data": {
+        "type": "logs",
+        "content": "added_source_url",
+        "output": "\u2705 Added source url to research: https://www.cricbuzz.com/cricket-series/9237/indian-premier-league-2025-ipl\n",
+        "metadata": "https://www.cricbuzz.com/cricket-series/9237/indian-premier-league-2025-ipl"
+      }
+    },
+    {
+      "timestamp": "2025-05-07T15:10:49.917340",
+      "type": "event",
+      "data": {
+        "type": "logs",
+        "content": "added_source_url",
+        "output": "\u2705 Added source url to research: https://www.ipl.com/cricket/news/ipl-2025-schedule-full-list-of-matches-fixtures-dates-venues-and-timings/\n",
+        "metadata": "https://www.ipl.com/cricket/news/ipl-2025-schedule-full-list-of-matches-fixtures-dates-venues-and-timings/"
+      }
+    },
+    {
+      "timestamp": "2025-05-07T15:10:49.926463",
+      "type": "event",
+      "data": {
+        "type": "logs",
+        "content": "added_source_url",
+        "output": "\u2705 Added source url to research: https://en.wikipedia.org/wiki/2025_Indian_Premier_League\n",
+        "metadata": "https://en.wikipedia.org/wiki/2025_Indian_Premier_League"
+      }
+    },
+    {
+      "timestamp": "2025-05-07T15:10:49.932427",
+      "type": "event",
+      "data": {
+        "type": "logs",
+        "content": "researching",
+        "output": "\ud83e\udd14 Researching for relevant information across multiple sources...\n",
+        "metadata": null
+      }
+    },
+    {
+      "timestamp": "2025-05-07T15:10:49.937865",
+      "type": "event",
+      "data": {
+        "type": "logs",
+        "content": "scraping_urls",
+        "output": "\ud83c\udf10 Scraping content from 5 URLs...",
+        "metadata": null
+      }
+    },
+    {
+      "timestamp": "2025-05-07T15:10:49.956172",
+      "type": "event",
+      "data": {
+        "type": "logs",
+        "content": "added_source_url",
+        "output": "\u2705 Added source url to research: https://www.careerindia.com/features/indian-premier-league-ipl-history-teams-format-records-049319.html\n",
+        "metadata": "https://www.careerindia.com/features/indian-premier-league-ipl-history-teams-format-records-049319.html"
+      }
+    },
+    {
+      "timestamp": "2025-05-07T15:10:49.962904",
+      "type": "event",
+      "data": {
+        "type": "logs",
+        "content": "added_source_url",
+        "output": "\u2705 Added source url to research: https://www.iuemag.com/inspi-news/iu/inspiring-story-of-the-indian-premier-league-ipl-the-rise-and-impact/\n",
+        "metadata": "https://www.iuemag.com/inspi-news/iu/inspiring-story-of-the-indian-premier-league-ipl-the-rise-and-impact/"
+      }
+    },
+    {
+      "timestamp": "2025-05-07T15:10:49.970204",
+      "type": "event",
+      "data": {
+        "type": "logs",
+        "content": "added_source_url",
+        "output": "\u2705 Added source url to research: https://www.britannica.com/topic/Indian-Premier-League\n",
+        "metadata": "https://www.britannica.com/topic/Indian-Premier-League"
+      }
+    },
+    {
+      "timestamp": "2025-05-07T15:10:49.978302",
+      "type": "event",
+      "data": {
+        "type": "logs",
+        "content": "added_source_url",
+        "output": "\u2705 Added source url to research: https://cricketresolved.com/how-the-ipl-format-works/\n",
+        "metadata": "https://cricketresolved.com/how-the-ipl-format-works/"
+      }
+    },
+    {
+      "timestamp": "2025-05-07T15:10:49.984268",
+      "type": "event",
+      "data": {
+        "type": "logs",
+        "content": "researching",
+        "output": "\ud83e\udd14 Researching for relevant information across multiple sources...\n",
+        "metadata": null
+      }
+    },
+    {
+      "timestamp": "2025-05-07T15:10:49.990180",
+      "type": "event",
+      "data": {
+        "type": "logs",
+        "content": "scraping_urls",
+        "output": "\ud83c\udf10 Scraping content from 4 URLs...",
+        "metadata": null
+      }
+    },
+    {
+      "timestamp": "2025-05-07T15:10:50.649765",
+      "type": "event",
+      "data": {
+        "type": "logs",
+        "content": "scraping_content",
+        "output": "\ud83d\udcc4 Scraped 5 pages of content",
+        "metadata": null
+      }
+    },
+    {
+      "timestamp": "2025-05-07T15:10:50.660787",
+      "type": "event",
+      "data": {
+        "type": "logs",
+        "content": "scraping_images",
+        "output": "\ud83d\uddbc\ufe0f Selected 4 new images from 17 total images",
+        "metadata": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/India_location_map.svg/500px-India_location_map.svg.png",
+          "https://upload.wikimedia.org/wikipedia/en/timeline/eyo0ptsk3t8q1umg7prwx9qyznuriqh.png",
+          "https://img.lb.wbmdstatic.com/vim/live/webmd/consumer_assets/site_images/sitefronts/branding/radiance/radiance_logo.svg",
+          "https://img.lb.wbmdstatic.com/vim/live/webmd/consumer_assets/site_images/articles/biographies/sheikh_zilpah_382x382.jpg?resize=51px:51px&output-quality=75"
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-05-07T15:10:50.669576",
+      "type": "event",
+      "data": {
+        "type": "logs",
+        "content": "scraping_complete",
+        "output": "\ud83c\udf10 Scraping complete",
+        "metadata": null
+      }
+    },
+    {
+      "timestamp": "2025-05-07T15:10:50.675912",
+      "type": "event",
+      "data": {
+        "type": "logs",
+        "content": "fetching_query_content",
+        "output": "\ud83d\udcda Getting relevant content based on query: what is the ipl...",
+        "metadata": null
+      }
+    },
+    {
+      "timestamp": "2025-05-07T15:10:50.766216",
+      "type": "event",
+      "data": {
+        "type": "logs",
+        "content": "scraping_content",
+        "output": "\ud83d\udcc4 Scraped 5 pages of content",
+        "metadata": null
+      }
+    },
+    {
+      "timestamp": "2025-05-07T15:10:50.774771",
+      "type": "event",
+      "data": {
+        "type": "logs",
+        "content": "scraping_images",
+        "output": "\ud83d\uddbc\ufe0f Selected 4 new images from 18 total images",
+        "metadata": [
+          "https://india.cricketschedule.com/wp-content/uploads/sites/6/2024/11/ipl-auction-banner.webp",
+          "https://www.iplt20.com/assets/images/auction-modal-close.svg",
+          "https://www.iplt20.com/assets/images/i.svg",
+          "https://documents.iplt20.com/ipl/franchises/1731684320_1702466030_LSGroundbig.png"
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-05-07T15:10:50.794414",
+      "type": "event",
+      "data": {
+        "type": "logs",
+        "content": "scraping_complete",
+        "output": "\ud83c\udf10 Scraping complete",
+        "metadata": null
+      }
+    },
+    {
+      "timestamp": "2025-05-07T15:10:50.866875",
+      "type": "event",
+      "data": {
+        "type": "logs",
+        "content": "fetching_query_content",
+        "output": "\ud83d\udcda Getting relevant content based on query: IPL 2025 teams and player auction details...",
+        "metadata": null
+      }
+    },
+    {
+      "timestamp": "2025-05-07T15:10:51.249075",
+      "type": "event",
+      "data": {
+        "type": "logs",
+        "content": "scraping_content",
+        "output": "\ud83d\udcc4 Scraped 4 pages of content",
+        "metadata": null
+      }
+    },
+    {
+      "timestamp": "2025-05-07T15:10:51.251424",
+      "type": "event",
+      "data": {
+        "type": "logs",
+        "content": "scraping_images",
+        "output": "\ud83d\uddbc\ufe0f Selected 4 new images from 24 total images",
+        "metadata": [
+          "https://www.iuemag.com/inspi-news/wp-content/uploads/2025/03/AI-Powered-Dynamic-Pricing-How-Retailers-Use-AI-to-Adjust-Prices-in-Real-Time-2-428x400.jpeg",
+          "https://www.iuemag.com/inspi-news/wp-content/uploads/2025/01/How-AI-Agents-Are-Shaping-the-Future-of-Technology-428x400.jpg",
+          "https://www.iuemag.com/inspi-news/wp-content/uploads/2025/02/AI-Powered-Smart-Irrigation-Systems-Reducing-Water-Wastage-and-Maximizing-Crop-Yield-428x400.jpg",
+          "https://www.iuemag.com/inspi-news/wp-content/uploads/2025/02/HubSpots-Blogging-Strategy-and-Its-Impact-on-Branding-9-428x400.png"
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-05-07T15:10:51.253746",
+      "type": "event",
+      "data": {
+        "type": "logs",
+        "content": "scraping_complete",
+        "output": "\ud83c\udf10 Scraping complete",
+        "metadata": null
+      }
+    },
+    {
+      "timestamp": "2025-05-07T15:10:51.256246",
+      "type": "event",
+      "data": {
+        "type": "logs",
+        "content": "fetching_query_content",
+        "output": "\ud83d\udcda Getting relevant content based on query: IPL cricket league history and format...",
+        "metadata": null
+      }
+    },
+    {
+      "timestamp": "2025-05-07T15:10:51.363638",
+      "type": "event",
+      "data": {
+        "type": "logs",
+        "content": "scraping_content",
+        "output": "\ud83d\udcc4 Scraped 5 pages of content",
+        "metadata": null
+      }
+    },
+    {
+      "timestamp": "2025-05-07T15:10:51.366413",
+      "type": "event",
+      "data": {
+        "type": "logs",
+        "content": "scraping_images",
+        "output": "\ud83d\uddbc\ufe0f Selected 4 new images from 22 total images",
+        "metadata": [
+          "https://secure.gravatar.com/avatar/d46c1bddffddb84aac8c07e99636b1ad61b2b06fe8ae51c69a79cdf1ba33df9c?s=500&d=mm&r=g",
+          "https://factodata.com/wp-content/uploads/2025/03/ongc-logo-300x300.webp",
+          "https://www.fact-file.com/wp-content/uploads/2025/01/ipl.jpg",
+          "https://www.fact-file.com/wp-content/uploads/2025/01/ipllllllllll.jpg"
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-05-07T15:10:51.369188",
+      "type": "event",
+      "data": {
+        "type": "logs",
+        "content": "scraping_complete",
+        "output": "\ud83c\udf10 Scraping complete",
+        "metadata": null
+      }
+    },
+    {
+      "timestamp": "2025-05-07T15:10:51.371835",
+      "type": "event",
+      "data": {
+        "type": "logs",
+        "content": "fetching_query_content",
+        "output": "\ud83d\udcda Getting relevant content based on query: Indian Premier League IPL 2025 overview...",
+        "metadata": null
+      }
+    },
+    {
+      "timestamp": "2025-05-07T15:10:52.600629",
+      "type": "event",
+      "data": {
+        "type": "logs",
+        "content": "research_step_finalized",
+        "output": "Finalized research step.\n\ud83d\udcb8 Total Research Costs: $0.024106339999999993",
+        "metadata": null
+      }
+    },
+    {
+      "timestamp": "2025-05-07T15:10:52.628215",
+      "type": "event",
+      "data": {
+        "type": "logs",
+        "content": "writing_report",
+        "output": "\u270d\ufe0f Writing report for 'what is the ipl'...",
+        "metadata": null
+      }
+    },
+    {
+      "timestamp": "2025-05-07T15:11:14.615176",
+      "type": "event",
+      "data": {
+        "type": "logs",
+        "content": "report_written",
+        "output": "\ud83d\udcdd Report written for 'what is the ipl'",
+        "metadata": null
+      }
+    }
+  ],
+  "content": {
+    "query": "",
+    "sources": [],
+    "context": [],
+    "report": "",
+    "costs": 0.0,
+    "type": "report",
+    "content": "selected_images",
+    "output": "BBC. (2015, July 14). Chennai Super Kings and Rajasthan Royals suspended from IPL. Retrieved from https://www.bbc.com/sport/cricket/33528224",
+    "metadata": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/India_location_map.svg/500px-India_location_map.svg.png",
+      "https://upload.wikimedia.org/wikipedia/en/timeline/eyo0ptsk3t8q1umg7prwx9qyznuriqh.png",
+      "https://img.lb.wbmdstatic.com/vim/live/webmd/consumer_assets/site_images/sitefronts/branding/radiance/radiance_logo.svg",
+      "https://img.lb.wbmdstatic.com/vim/live/webmd/consumer_assets/site_images/articles/biographies/sheikh_zilpah_382x382.jpg?resize=51px:51px&output-quality=75",
+      "https://india.cricketschedule.com/wp-content/uploads/sites/6/2024/11/ipl-auction-banner.webp",
+      "https://www.iplt20.com/assets/images/auction-modal-close.svg",
+      "https://www.iplt20.com/assets/images/i.svg",
+      "https://documents.iplt20.com/ipl/franchises/1731684320_1702466030_LSGroundbig.png",
+      "https://www.iuemag.com/inspi-news/wp-content/uploads/2025/03/AI-Powered-Dynamic-Pricing-How-Retailers-Use-AI-to-Adjust-Prices-in-Real-Time-2-428x400.jpeg",
+      "https://www.iuemag.com/inspi-news/wp-content/uploads/2025/01/How-AI-Agents-Are-Shaping-the-Future-of-Technology-428x400.jpg"
+    ]
+  }
+}
