@@ -2,10 +2,8 @@ name: RCA Bot - Build & Deploy (ACR + Rollback)
 
 on:
   push:
-    branches: [ main ]
-    paths:
-      - "backend/**"
-      - "Dockerfile"
+    branches:
+      - main
   workflow_dispatch:
 
 jobs:
@@ -64,3 +62,41 @@ jobs:
 
           docker push \
             ${{ env.ACR_LOGIN_SERVER }}/${{ env.IMAGE_NAME }}:$IMAGE_TAG
+
+      # Deploy to Azure Container App
+      - name: Deploy RCA to Azure Container App
+        uses: azure/container-apps-deploy-action@v1
+        with:
+          resourceGroup: ${{ env.RESOURCE_GROUP }}
+          containerAppName: ${{ env.CONTAINER_APP }}
+          imageToDeploy: ${{ env.ACR_LOGIN_SERVER }}/${{ env.IMAGE_NAME }}:${{ env.IMAGE_TAG }}
+
+      # Health check (root endpoint)
+      - name: Health check
+        run: |
+          for i in {1..6}; do
+            if curl -f ${{ env.BACKEND_URL }}/; then
+              echo "Health check passed"
+              exit 0
+            fi
+            sleep 10
+          done
+          echo "Health check failed"
+          exit 1
+
+      # Rollback on failure
+      - name: Rollback on failure
+        if: failure() && env.CURRENT_IMAGE != ''
+        run: |
+          echo "ROLLING BACK TO $CURRENT_IMAGE"
+          az containerapp update \
+            -n ${{ env.CONTAINER_APP }} \
+            -g ${{ env.RESOURCE_GROUP }} \
+            --image $CURRENT_IMAGE
+
+      - name: Success
+        if: success()
+        run: |
+          echo "✅ RCA Backend Deployed Successfully"
+          echo "Version: v${{ env.IMAGE_TAG }}"
+          echo "URL: ${{ env.BACKEND_URL }}"
