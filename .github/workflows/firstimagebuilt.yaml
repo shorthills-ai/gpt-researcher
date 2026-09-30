@@ -1,0 +1,39 @@
+
+  name: RCA Bot - Build & Push Image - PARK
+
+  on:
+    workflow_dispatch:
+
+  jobs:
+    build_push:
+      runs-on: ubuntu-latest
+
+      env:
+        ACR_NAME: PartsgenieBEpark
+        ACR_LOGIN_SERVER: partsgeniebepark.azurecr.io
+        IMAGE_NAME: partsgenie-rca-backend
+
+      steps:
+        - name: Checkout code
+          uses: actions/checkout@v4
+
+        - name: Free disk space
+          run: |
+            docker system prune -af
+            sudo rm -rf /usr/share/dotnet
+            sudo rm -rf /usr/local/lib/android
+            sudo rm -rf /opt/ghc
+
+        - name: Login to Azure
+          uses: azure/login@v2
+          with:
+            creds: ${{ secrets.AZURE_CREDENTIALS_PARK }}
+
+        - name: Login to ACR
+          run: az acr login --name ${{ env.ACR_NAME }}
+
+        - name: Build & Push image to ACR
+          run: |
+            IMAGE_TAG=v${{ github.run_number }}
+            docker build -t ${{ env.ACR_LOGIN_SERVER }}/${{ env.IMAGE_NAME }}:$IMAGE_TAG .
+            docker push ${{ env.ACR_LOGIN_SERVER }}/${{ env.IMAGE_NAME }}:$IMAGE_TAG
