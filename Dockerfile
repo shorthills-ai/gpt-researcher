@@ -1,21 +1,24 @@
-# Stage 1: Browser and build tools installation
-FROM python:3.11.4-slim-bullseye AS install-browser
+  # Stage 1: Browser and build tools installation
+  FROM python:3.11.4-slim-bullseye AS install-browser
 
-# Install Chromium, Chromedriver, Firefox, Geckodriver, and build tools in one layer
-RUN  apt-get update \
-    && apt-get install -y gnupg wget ca-certificates --no-install-recommends \
-    && wget -qO - https://dl.google.com/linux/linux_signing_key.pub | apt-key add - \
-    && echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" > /etc/apt/sources.list.d/google-chrome.list \
-    && apt-get update \
-    && apt-get install -y google-chrome-stable chromium-driver \
-    && google-chrome --version && chromedriver --version \
-    && apt-get install -y --no-install-recommends firefox-esr build-essential \
-    && wget https://github.com/mozilla/geckodriver/releases/download/v0.33.0/geckodriver-v0.33.0-linux64.tar.gz \
-    && tar -xvzf geckodriver-v0.33.0-linux64.tar.gz \
-    && chmod +x geckodriver \
-    && mv geckodriver /usr/local/bin/ \
-    && rm geckodriver-v0.33.0-linux64.tar.gz \
-    && rm -rf /var/lib/apt/lists/*  # Clean up apt lists to reduce image size
+  # Install Chromium, Chromedriver, Firefox, Geckodriver, and build tools in one layer
+  RUN sed -i 's|http://deb.debian.org/debian-security|http://archive.debian.org/debian-security|' /etc/apt/sources.list \
+      && sed -i 's|^deb |deb [check-valid-until=no] |' /etc/apt/sources.list \
+      && apt-get update \
+      && apt-get install -y gnupg wget ca-certificates --no-install-recommends \
+      && mkdir -p /etc/apt/keyrings \
+      && wget -qO - https://dl.google.com/linux/linux_signing_key.pub | gpg --dearmor -o /etc/apt/keyrings/google-chrome.gpg \
+      && echo "deb [arch=amd64 signed-by=/etc/apt/keyrings/google-chrome.gpg] http://dl.google.com/linux/chrome/deb/ stable main" > /etc/apt/sources.list.d/google-chrome.list \
+      && apt-get update \
+      && apt-get install -y google-chrome-stable chromium-driver \
+      && google-chrome --version && chromedriver --version \
+      && apt-get install -y --no-install-recommends firefox-esr build-essential \
+      && wget https://github.com/mozilla/geckodriver/releases/download/v0.33.0/geckodriver-v0.33.0-linux64.tar.gz \
+      && tar -xvzf geckodriver-v0.33.0-linux64.tar.gz \
+      && chmod +x geckodriver \
+      && mv geckodriver /usr/local/bin/ \
+      && rm geckodriver-v0.33.0-linux64.tar.gz \
+      && rm -rf /var/lib/apt/lists/*
 
 # Stage 2: Python dependencies installation
 FROM install-browser AS gpt-researcher-install
