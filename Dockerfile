@@ -1,9 +1,8 @@
+
   # Stage 1: Browser and build tools installation
   FROM python:3.11.4-slim-bullseye AS install-browser
 
-  # Install Chromium, Chromedriver, Firefox, Geckodriver, and build tools in one layer
-  RUN sed -i 's|http://deb.debian.org/debian-security|http://archive.debian.org/debian-security|' /etc/apt/sources.list \
-      && sed -i 's|^deb |deb [check-valid-until=no] |' /etc/apt/sources.list \
+  RUN sed -i '/debian-security/d' /etc/apt/sources.list \
       && apt-get update \
       && apt-get install -y gnupg wget ca-certificates --no-install-recommends \
       && mkdir -p /etc/apt/keyrings \
@@ -19,6 +18,7 @@
       && mv geckodriver /usr/local/bin/ \
       && rm geckodriver-v0.33.0-linux64.tar.gz \
       && rm -rf /var/lib/apt/lists/*
+
 
 # Stage 2: Python dependencies installation
 FROM install-browser AS gpt-researcher-install
