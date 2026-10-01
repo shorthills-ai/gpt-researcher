@@ -109,7 +109,11 @@ def startup_event():
 
 @app.get("/")
 async def read_root(request: Request):
-    return templates.TemplateResponse("index.html", {"request": request, "report": None})
+    return templates.TemplateResponse(
+        request=request,
+        name="index.html",
+        context={"report": None}
+    )
 
 
 @app.get("/report/{research_id}")
