@@ -11,15 +11,15 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      # SAME ACR (already working)
-      ACR_NAME: PartsgenieAiAcr
-      ACR_LOGIN_SERVER: partsgenieaiacr-b9hpeqe9angfhqfz.azurecr.io
+      # Park Circle ACR (same registry partsgenie-be-park already uses)
+      ACR_NAME: PartsgenieBEpark
+      ACR_LOGIN_SERVER: partsgeniebepark.azurecr.io
 
-      # RCA-specific
+      # RCA-specific — now pointed at the Park Circle app
       IMAGE_NAME: partsgenie-rca-backend
-      CONTAINER_APP: partsgenie-fresh-rca
-      RESOURCE_GROUP: Partsgenie
-      BACKEND_URL: https://partsgenie-fresh-rca.lemonisland-b2ee0da0.eastus2.azurecontainerapps.io
+      CONTAINER_APP: partsgenie-rca-park
+      RESOURCE_GROUP: rg-shais-PartsGenie-poc
+      BACKEND_URL: https://partsgenie-rca-park.orangeplant-a78ed112.eastus2.azurecontainerapps.io
 
     steps:
       - name: Checkout code
@@ -32,17 +32,14 @@ jobs:
           sudo rm -rf /usr/local/lib/android
           sudo rm -rf /opt/ghc
 
-      # Azure login (MANDATORY)
       - name: Login to Azure
         uses: azure/login@v2
         with:
-          creds: ${{ secrets.AZURE_CREDENTIALS }}
+          creds: ${{ secrets.AZURE_CREDENTIALS_PARK }}
 
-      # Login to SAME ACR
       - name: Login to ACR
         run: az acr login --name ${{ env.ACR_NAME }}
 
-      # Capture current image (rollback-safe)
       - name: Get current running image
         run: |
           CURRENT_IMAGE=$(az containerapp show \
@@ -51,7 +48,6 @@ jobs:
             --query "properties.template.containers[0].image" -o tsv || echo "")
           echo "CURRENT_IMAGE=$CURRENT_IMAGE" >> $GITHUB_ENV
 
-      # Build & push RCA image
       - name: Build & Push RCA image to ACR
         run: |
           IMAGE_TAG=v${{ github.run_number }}
@@ -63,7 +59,6 @@ jobs:
           docker push \
             ${{ env.ACR_LOGIN_SERVER }}/${{ env.IMAGE_NAME }}:$IMAGE_TAG
 
-      # Deploy to Azure Container App
       - name: Deploy RCA to Azure Container App
         uses: azure/container-apps-deploy-action@v1
         with:
@@ -71,7 +66,6 @@ jobs:
           containerAppName: ${{ env.CONTAINER_APP }}
           imageToDeploy: ${{ env.ACR_LOGIN_SERVER }}/${{ env.IMAGE_NAME }}:${{ env.IMAGE_TAG }}
 
-      # Health check (root endpoint)
       - name: Health check
         run: |
           for i in {1..6}; do
@@ -84,15 +78,14 @@ jobs:
           echo "Health check failed"
           exit 1
 
-      # Rollback on failure
       - name: Rollback on failure
-        if: failure() && env.CURRENT_IMAGE != ''
+        if: failure()
         run: |
           echo "ROLLING BACK TO $CURRENT_IMAGE"
           az containerapp update \
             -n ${{ env.CONTAINER_APP }} \
             -g ${{ env.RESOURCE_GROUP }} \
-            --image $CURRENT_IMAGE
+            --image "$CURRENT_IMAGE"
 
       - name: Success
         if: success()
